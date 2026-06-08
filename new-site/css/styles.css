@@ -110,22 +110,40 @@ p:last-child { margin-bottom: 0; }
   transform: translateY(-1px);
   text-decoration: none;
 }
+.btn-white {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--white);
+}
+.btn-white:hover {
+  background: var(--light);
+  border-color: var(--light);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
 
 /* ── Header ─────────────────────────────────────────────────────────────────── */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--white);
-  border-bottom: 1px solid var(--border);
+  background: var(--black);
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.site-header .container {
+  max-width: none;
+  padding: 0 2.5rem;
 }
 .nav-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   height: 64px;
-  gap: 1rem;
 }
+.nav-logo    { grid-column: 1; }
+.nav-links   { grid-column: 2; }
+.nav-cta     { grid-column: 3; justify-self: end; margin-left: 0; padding: .5rem 1.1rem; font-size: .8rem; }
+.nav-toggle  { grid-column: 3; justify-self: end; }
 .nav-logo {
   display: flex;
   align-items: center;
@@ -144,11 +162,11 @@ p:last-child { margin-bottom: 0; }
 }
 .nav-logo-text strong {
   font-size: .9rem;
-  color: var(--black);
+  color: var(--white);
 }
 .nav-logo-text span {
   font-size: .72rem;
-  color: var(--mid);
+  color: rgba(255,255,255,.55);
   font-weight: 400;
 }
 .nav-links {
@@ -160,11 +178,11 @@ p:last-child { margin-bottom: 0; }
 .nav-links a {
   font-size: .875rem;
   font-weight: 500;
-  color: var(--dark);
+  color: rgba(255,255,255,.75);
   transition: color .15s;
 }
 .nav-links a:hover,
-.nav-links a.active { color: var(--blue); text-decoration: none; }
+.nav-links a.active { color: var(--white); text-decoration: none; }
 .nav-cta { margin-left: .5rem; }
 
 /* hamburger */
@@ -181,7 +199,7 @@ p:last-child { margin-bottom: 0; }
   display: block;
   width: 22px;
   height: 2px;
-  background: var(--black);
+  background: var(--white);
   transition: transform .2s, opacity .2s;
 }
 .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -692,8 +710,8 @@ tbody tr:last-child td { border-bottom: none; }
     position: absolute;
     top: 64px;
     left: 0; right: 0;
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
+    background: var(--black);
+    border-bottom: 1px solid rgba(255,255,255,.1);
     padding: 1.25rem 1.5rem;
     gap: 1.25rem;
     z-index: 99;
