@@ -347,6 +347,7 @@ p:last-child { margin-bottom: 0; }
   font-size: .875rem;
   text-align: center;
   padding: 1rem;
+  min-height: 300px;
 }
 
 /* ── Series sections (pumps page) ──────────────────────────────────────────── */
@@ -522,16 +523,17 @@ tbody tr:last-child td { border-bottom: none; }
 }
 .benefit-row:last-of-type { border-bottom: none; }
 .benefit-text {
-  padding: 5rem 4rem 5rem 0;
+  padding: 5rem 4rem 5rem max(1.5rem, calc((100vw - var(--max-w)) / 2 + 1.5rem));
 }
 .benefit-row.alt .benefit-text {
-  padding: 5rem 0 5rem 4rem;
+  padding: 5rem max(1.5rem, calc((100vw - var(--max-w)) / 2 + 1.5rem)) 5rem 4rem;
   order: 2;
 }
 .benefit-row.alt .benefit-img { order: 1; }
 .benefit-text h2 { margin-bottom: 1rem; }
 .benefit-text p  { color: var(--mid); }
-.benefit-img img {
+.benefit-img img,
+.benefit-img .img-placeholder {
   width: 100%;
   height: 100%;
   min-height: 340px;
@@ -708,7 +710,7 @@ tbody tr:last-child td { border-bottom: none; }
   .benefit-row.alt .benefit-text,
   .benefit-row.alt .benefit-img { order: unset; }
   .benefit-text,
-  .benefit-row.alt .benefit-text { padding: 2.5rem 0; }
+  .benefit-row.alt .benefit-text { padding: 2.5rem 1.5rem; }
   .benefit-img img { min-height: 220px; }
 
   .photo-strip  { grid-template-columns: 1fr; }
