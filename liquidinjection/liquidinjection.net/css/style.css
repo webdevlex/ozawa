@@ -1,0 +1,1302 @@
+@import url(https://web.archive.org/web/20170628120426cs_/http://fonts.googleapis.com/css?family=Dorsa);
+@charset "utf-8";
+/* CSS Document */
+a[href^="tel:"] {
+  color: inherit;
+  text-decoration: none;
+}
+.color-1 {
+  color: #efedef;
+}
+.img-indent {
+  margin: 0px 30px 0 0;
+  float: left;
+}
+.img-indent1 {
+  margin: 1px 29px 16px 0;
+  float: left;
+}
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.center {
+  text-align: center;
+}
+.preloader {
+  background: url(/web/20170628120426im_/http://liquidinjection.net/img/loader.gif) center center no-repeat;
+}
+.clear {
+  clear: both;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+}
+.m-top {
+  margin-top: -7px;
+}
+/*------ header ------- */
+header {
+  padding: 59px 0 0px;
+  z-index: 50;
+}
+.bg-glow {
+  background: url(/web/20170628120426im_/http://liquidinjection.net/img/bg-glow.jpg) no-repeat 50% 0;
+}
+/* navbar */
+.navbar_ {
+  margin: 0;
+  position: relative;
+}
+.navbar_ .navbar-inner_ {
+  padding: 0;
+  margin: 0;
+  border: none;
+  min-height: inherit;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+/*nav*/
+.navbar_ .container {
+  position: relative;
+}
+.nav-collapse_ {
+  padding-top: 71px;
+  z-index: 10;
+  float: right;
+  padding-right: 3px;
+}
+.nav-collapse_ .nav li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  zoom: 1;
+}
+.nav-collapse_ .nav > li {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  margin-left: 1px;
+}
+.nav-collapse_ .nav li a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-shadow: none;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  line-height: 18px;
+  font-size: 12px;
+}
+.nav-collapse_ .nav > li > a {
+  color: #0323c7;
+  margin: 0;
+  padding: 16px 16px 16px 17px;
+  display: block;
+  background: none;
+  position: relative;
+  z-index: 20;
+}
+.nav-collapse_ .nav > li.sfHover > a,
+.nav-collapse_ .nav > li.sfHover > a:hover,
+.nav-collapse_ .nav > li > a:hover,
+.nav-collapse_ .nav > li.active > a,
+.nav-collapse_ .nav > li.active > a:hover {
+  background: #afafaf;
+  color: #ffffff;
+}
+.sub-menu > a {
+  position: relative;
+}
+.nav-collapse_ .nav ul {
+  position: absolute;
+  display: none;
+  width: 140px;
+  left: 28px;
+  top: 50px;
+  list-style: none;
+  zoom: 1;
+  z-index: 9;
+  background: url(/web/20170628120426im_/http://liquidinjection.net/img/part-nav-ul.png) no-repeat 0 0;
+  padding: 26px 0 6px;
+  margin: 0;
+}
+.nav-collapse_ .nav ul li {
+  padding-bottom: 10px;
+  text-align: center;
+}
+.nav-collapse_ .nav ul li a {
+  color: #cccccc;
+  text-transform: uppercase;
+  display: block;
+  background: none;
+}
+.nav-collapse_ .nav > li > ul li > a:hover,
+.nav-collapse_ .nav > li > ul li.sfHover > a {
+  text-decoration: none;
+  color: #8c8c8c;
+}
+.nav-collapse_ .nav ul ul {
+  background: url(/web/20170628120426im_/http://liquidinjection.net/img/part-nav-ul-ul.png) no-repeat 0 0;
+  position: absolute;
+  display: none;
+  width: 140px;
+  left: 143px;
+  top: -9px;
+  height: auto;
+  list-style: none;
+  padding-left: 5px;
+  z-index: 111;
+  margin: 0;
+}
+.nav-collapse_ .nav ul .sf-sub-indicator {
+  display: none;
+}
+.nav-collapse_ .nav ul ul li a {
+  color: #cccccc;
+}
+.nav-collapse_ .nav li ul ul li a:hover {
+  text-decoration: none;
+  color: #cccccc;
+}
+.navbar_ .brand {
+  font-family: 'Dorsa', sans-serif;
+  display: block;
+  float: left;
+  font-size: 100px;
+  font-weight: normal;
+  margin-left: 0px;
+  line-height: 104px;
+  padding: 0;
+  text-shadow: none;
+  width: 250px;
+  background: #cccccc;
+}
+.navbar_ .brand a {
+  color: #ffffff;
+  display: block;
+  padding: 10px 0 5px 28px;
+  letter-spacing: 1px;
+}
+.navbar_ .brand a:hover {
+  text-decoration: none;
+}
+.navbar_ .brand span {
+  display: block;
+  color: #cccccc;
+  margin-top: -23px;
+}
+/*------ h1, h2, h3, h4, h5, h6 ------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Dorsa', sans-serif;
+  font-weight: normal;
+}
+h1 {
+  font-size: 70px;
+  line-height: 74px;
+}
+header h1 {
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 60px;
+  line-height: 64px;
+  margin: 21px 0 19px;
+}
+h3.extra {
+  margin-top: 31px;
+}
+.title-1 {
+  background: url(/web/20170628120426im_/http://liquidinjection.net/img/border-h.png) repeat-x 0 bottom;
+  padding-bottom: 6px;
+color: #0C0799;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 18px;
+}
+h4 {
+  font-size: 24px;
+	line-height: normal;
+	margin: 21px 0 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #0C0799;
+}
+h5 {
+  font-size: 18px;
+  color: #939393;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+p {
+	padding-bottom: 18px;
+	color: #000000;
+	margin: 0;
+}
+.link {
+  background: none;
+  color: #ee6640;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.link:hover {
+  color: #ffffff;
+  background: none;
+  text-decoration: none;
+}
+/*--- header end ------*/
+/*------ content ------- */
+#content {
+  position: relative;
+  padding: 0 0 30px;
+}
+.left-0 {
+  margin-left: 0 !important;
+}
+.overflow {
+  overflow: hidden;
+}
+.indent-1 {
+  padding-right: 0px;
+}
+.thumbnails-1 {
+  margin: 0;
+  list-style: outside none;
+}
+.thumbnails-1 > li {
+  margin-bottom: 40px;
+}
+.thumbnails-1 .thumbnail-1 {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 0;
+  line-height: 22px;
+}
+.thumbnails-1 .thumbnail-1 section {
+  padding-top: 17px;
+}
+.thumbnails-1 .thumbnail-1 section strong {
+  color: #ffffff;
+}
+.thumbnails-1 .thumbnail-1 section p {
+  line-height: 22px;
+}
+.border-horiz {
+	background: #cccccc;
+	height: 1px;
+	margin: 0px;
+}
+.border-horiz.extra {
+  margin-bottom: 10px;
+}
+.txt-1 {
+  color: #ffffff;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+.quote-1 {
+  border: medium none;
+  color: #636363;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.badge {
+  font-size: 41px;
+  line-height: 44px;
+  width: 67px;
+  text-shadow: 1px 1px #e8eaea;
+  text-align: center;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  border-radius: 36px;
+  background: #d1cfd0;
+  -webkit-box-shadow: 1px 1px #dddcde;
+  -moz-box-shadow: 1px 1px #dddcde;
+  box-shadow: 1px 1px #dddcde;
+  float: left;
+  margin-right: 18px;
+  color: #101010;
+  padding: 11px 0;
+  border-right: 1px solid #eaedee;
+  border-bottom: 1px solid #eaedee;
+}
+/* flickr */
+#flickr_badge_wrapper .flickr_badge_image {
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 12px;
+  width: 17%;
+}
+#flickr_badge_wrapper .flickr_badge_image a {
+  display: block;
+}
+#flickr_badge_wrapper .flickr_badge_image a img {
+  width: 115px ;
+  height: auto;
+}
+/*------ lists ------- */
+/*------ list ------- */
+.list.extra {
+  width: 100%;
+  margin: 0 0 29px ;
+  float: none;
+}
+.list.extra.extra1 {
+  margin: 0;
+}
+.list {
+  list-style: none outside;
+  margin: 14px 10px 0 0;
+  float: left;
+  width: 90px;
+}
+.list li {
+  line-height: 16px;
+  background: url(/web/20170628120426im_/http://liquidinjection.net/img/marker-1.gif) no-repeat 2px 6px;
+  padding-left: 15px;
+  padding-bottom: 9px;
+}
+.list li a {
+  font-weight: bold;
+  color: #ffffff;
+  display: inline-block;
+}
+.list li a:hover {
+  text-decoration: underline;
+}
+/*----------- .portfolio --------------*/
+.portfolio {
+  list-style: none outside;
+  margin: 0;
+}
+.portfolio li {
+  float: left;
+  margin: 0 0 20px 30px;
+}
+.magnifier {
+	opacity: 1;
+	position: relative;
+	height: auto;
+	display: block;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	background-image: url(/web/20170628120426im_/http://liquidinjection.net/css/jpg/ozawa%20500%20series%20rear%20view.jpg);
+}
+.magnifier:hover {
+  opacity: 0.7;
+}
+.magnifier:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  background: url('/web/20170628120426im_/http://liquidinjection.net/img/magnifier.png') center center no-repeat;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.magnifier:hover:after {
+  opacity: 0.6;
+}
+/*----------- .list-client --------------*/
+.list-client {
+  list-style: none outside;
+  margin: 0;
+}
+.list-client li {
+  margin-bottom: 42px;
+}
+.list-client a {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.list-client a:hover {
+  opacity: 0.7;
+}
+/*----------- .list-quote --------------*/
+.list-quote {
+  list-style: none outside;
+  margin: 0;
+}
+.list-quote li {
+  margin-bottom: 20px;
+}
+.list-quote dl {
+  margin: 0;
+}
+.list-quote dt {
+  text-align: left;
+  width: 85px;
+}
+.list-quote dd {
+  margin-left: 85px;
+}
+.list-quote dd strong {
+  color: #ffffff;
+}
+/*----------- .list-blog --------------*/
+.list-blog {
+  list-style: none outside;
+  margin: 0;
+}
+.list-blog li {
+  margin-bottom: 42px;
+}
+.list-blog dl {
+  margin: 0;
+}
+.list-blog dt {
+  text-align: left;
+  width: 91px;
+}
+.list-blog dd {
+  margin-left: 91px;
+}
+.list-blog h4 {
+  margin-bottom: 7px;
+}
+.list-blog p {
+	padding-bottom: 12px;
+	color: #000000;
+}
+/*----------- .block-comment --------------*/
+.block-comment {
+  overflow: hidden;
+  padding-bottom: 11px;
+}
+.block-comment a {
+  float: left;
+}
+.block-comment a + a {
+  float: right;
+}
+/*----------- search --------------*/
+/* search-form */
+#search {
+  margin: 0;
+  padding-bottom: 12px;
+  overflow: hidden;
+}
+#search input {
+  background: #181818;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  line-height: 17px !important;
+  line-height: 18px;
+  width: 200px;
+  float: left;
+  margin: 0px 20px 0 0;
+  padding: 12px 12px 10px;
+  height: 42px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#search input:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#search a {
+  float: left;
+}
+/*----------- list-photo--------------*/
+.list-photo {
+  list-style: none outside;
+  margin: 0;
+  overflow: hidden;
+}
+.list-photo li {
+  float: left;
+  margin: 0 6px 12px 0;
+}
+/*----------- date-1--------------*/
+.date-1 {
+  font-family: 'Dorsa', sans-serif;
+  color: #ffffff;
+  font-size: 54px;
+  line-height: 48px;
+  width: 80px;
+  background: #181818;
+  text-transform: uppercase;
+  font-weight: normal;
+  overflow: hidden;
+  display: block;
+}
+.date-1 strong {
+  display: block;
+  text-align: center;
+  float: left;
+  font-size: 80px;
+  line-height: 82px;
+  font-weight: normal;
+  display: block;
+  margin: 0 7px 0 14px;
+}
+.date-1 span {
+  float: left;
+  font-size: 36px;
+  line-height: 38px;
+  display: block;
+  margin-top: 8px;
+}
+.date-1 span b {
+  font-weight: normal;
+  display: block;
+  font-size: 30px;
+  line-height: 32px;
+  margin-top: -4px;
+}
+/***** map *****/
+.map {
+  margin: 0 0 16px;
+  line-height: 0;
+}
+.map iframe {
+  border: none;
+  width: 100%;
+  height: 274px;
+}
+/*------ mail & address------- */
+.address-1 strong {
+  color: #636363;
+  display: block;
+}
+.address-1 span {
+  display: inline-block;
+  width: 84px;
+}
+.mail-1 {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.mail-1:hover {
+  text-decoration: none;
+}
+.mail-2 {
+  text-align: right;
+}
+.mail-2 a {
+  color: #3c3c3c;
+}
+.mail-2 a:hover {
+  text-decoration: underline;
+}
+/***** contact form *****/
+#contact-form {
+  position: relative;
+  vertical-align: top;
+  z-index: 1;
+  margin: 0 0 20px;
+}
+#contact-form fieldset {
+  border: none;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#contact-form label {
+  display: block;
+  min-height: 62px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+#contact-form .message {
+  min-height: 252px;
+}
+#contact-form input,
+#contact-form textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 11px 18px 12px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 17px !important;
+  color: #636363;
+  background: #181818;
+  text-transform: uppercase;
+  outline: none;
+  width: 270px;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  float: left;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#contact-form input {
+  height: 42px;
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#contact-form .area .error {
+  float: none;
+}
+#contact-form textarea {
+  width: 100%;
+  height: 234px;
+  padding-top: 18px;
+  resize: none;
+  overflow: auto;
+}
+#contact-form .success {
+  display: none;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  background: #181818;
+  padding: 12px 14px;
+  text-transform: none;
+}
+#contact-form .error,
+#contact-form .empty {
+  color: #f00;
+  font-size: 11px;
+  line-height: 1.27em;
+  display: none;
+  overflow: hidden;
+  margin-bottom: 5px;
+  float: left;
+  padding: 2px 4px 6px 0;
+  width: 100%;
+  text-transform: none;
+}
+.buttons-wrapper {
+  position: relative;
+  text-align: right;
+}
+.buttons-wrapper a {
+  margin-left: 25px;
+  cursor: pointer;
+}
+.buttons-wrapper a:hover {
+  text-decoration: none;
+}
+/*----------- buttons & links--------------*/
+.btn-1 {
+  color: #ffffff;
+  background: #181818;
+  line-height: 16px;
+  padding: 12px 14px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  text-transform: uppercase;
+  text-shadow: none;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn-1:hover {
+  color: #181818;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  background: #ffffff;
+}
+.link-1 {
+  color: #ffffff;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+}
+.link-1:hover {
+  color: #ffffff;
+}
+/*----------- Back to top --------------*/
+#toTop {
+  display: none;
+  width: 56px;
+  height: 33px;
+  overflow: hidden;
+  background: url(/web/20170628120426im_/http://liquidinjection.net/img/totop.png) 0 0 no-repeat;
+  position: fixed;
+  margin-right: -690px !important;
+  right: 50%;
+  bottom: 130px;
+  z-index: 999;
+}
+#toTop:hover {
+  background-position: 0 bottom;
+}
+#toTop:active,
+#toTop:focus {
+  outline: none;
+}
+/* policy */.policy {
+  position: relative;
+  margin-top: -3px;
+}
+.policy strong {
+  display: block;
+  color: #ffffff;
+  line-height: 16px;
+  padding-bottom: 9px;
+}
+.policy p {
+  color: #636363;
+  padding-bottom: 21px;
+}
+/* block-404 */.block-404 {
+  background: #000000;
+  margin: 0 0 30px 0;
+  overflow: hidden;
+}
+.block-404 .img-404 {
+  float: none;
+  margin-right: 0;
+  width: 100%;
+}
+.box-404 {
+  padding-top: 8px;
+  overflow: hidden;
+}
+.box-404 h3 {
+  font-size: 100px;
+  line-height: 104px;
+}
+.box-404 h4 {
+  margin-bottom: 6px;
+  font-size: 60px;
+  line-height: 64px;
+  margin-top: -34px;
+}
+.box-404 p {
+  padding-bottom: 13px;
+}
+/* search-form 404 */#form-search {
+  margin: 3px 0 0 0;
+  overflow: hidden;
+  position: relative;
+  height: 32px;
+  border: none;
+  background: #252525;
+}
+#form-search input {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  line-height: 17px !important;
+  width: 84%;
+  margin: 0;
+  padding: 10px 12px 10px;
+  height: 32px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#form-search input:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+#form-search a {
+  display: inline-block;
+  position: absolute;
+  background: url(/web/20170628120426im_/http://liquidinjection.net/img/img-search.png) no-repeat 0 0;
+  width: 21px;
+  height: 21px;
+  right: 16px;
+  top: 6px;
+}
+#form-search a:hover {
+  background-position: 0 bottom;
+}
+/*--- content end ------*/
+/*------ footer ------- */
+footer {
+  padding: 34px 0 40px;
+}
+.privacy {
+  font-size: 13px;
+  color: #323232;
+  padding-top: 9px;
+}
+.privacy a {
+  color: #323232;
+  text-transform: uppercase;
+}
+.list-social {
+  list-style: none outside none;
+  overflow: hidden;
+  margin: 0;
+}
+.list-social a {
+  width: 30px;
+  height: 30px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.list-social a.icon-1 {
+  background-image: url(/web/20170628120426im_/http://liquidinjection.net/img/soc-icon-1.png);
+}
+.list-social a.icon-2 {
+  background-image: url(/web/20170628120426im_/http://liquidinjection.net/img/soc-icon-2.png);
+}
+.list-social a.icon-3 {
+  background-image: url(/web/20170628120426im_/http://liquidinjection.net/img/soc-icon-3.png);
+}
+.list-social a.icon-4 {
+  background-image: url(/web/20170628120426im_/http://liquidinjection.net/img/soc-icon-4.png);
+}
+.list-social a.icon-5 {
+  background-image: url(/web/20170628120426im_/http://liquidinjection.net/img/soc-icon-5.png);
+}
+.list-social li {
+  float: left;
+  margin-left: 5px;
+}
+.list-social a:hover {
+  background-position: 0 bottom;
+}
+/*--- footer end ------*/
+@media (min-width: 1200px) {
+  .box-404 {
+    overflow: hidden;
+  }
+  .block-404 {
+    margin: 0 0 30px 0;
+    padding-right: 78px;
+  }
+  .block-404 .img-404 {
+    width: 754px;
+    height: 386px;
+    float: left;
+    margin-right: 42px;
+  }
+  #search input {
+    width: 250px;
+  }
+  .list-photo li.last {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1200px) {
+  #search input {
+    width: 200px;
+  }
+}
+@media (max-width: 979px) {
+  #search input {
+    width: 127px;
+  }
+  .block-404 .img-404 {
+    margin-left: 0;
+  }
+  /* navbar */
+  .nav-collapse_ {
+    padding-top: 0px;
+    padding-right: 0;
+  }
+  .navbar_ .navbar-inner_ {
+    padding: 13px 0 10px 22px;
+  }
+  .navbar_ .nav-collapse_ {
+    position: absolute;
+    left: auto;
+    top: 96px;
+    right: 0;
+  }
+  .navbar_ .btn {
+	display: inline-block;
+	float: right;
+	background: #cccccc;
+	padding: 12px;
+	font-family: 'Dorsa', sans-serif;
+	text-decoration: none;
+	margin: 0;
+	font-size: 40px;
+	line-height: 40px;
+	text-shadow: none;
+	color: #ffffff;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	text-transform: uppercase;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+  }
+  .navbar_ .btn:hover {
+    background: #181818;
+    color: #ffffff;
+  }
+  .navbar_ .btn .icon-bar {
+    display: none;
+  }
+  .nav-collapse_ .nav {
+    position: relative;
+    zoom: 1;
+    z-index: 999;
+    width: 150px;
+    background: #afafaf;
+    padding: 18px 0 10px;
+    margin: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+  .nav-collapse_ .nav li {
+    line-height: 16px;
+    background: none;
+    margin: 0;
+    padding: 0 0 8px 0;
+    display: block;
+    width: 100%;
+  }
+  .nav-collapse_ .nav li a {
+    padding-left: 12px !important;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0;
+    text-align: left !important;
+  }
+  .nav-collapse_ .nav > li.sfHover,
+  .nav-collapse_ .nav > li:hover,
+  .nav-collapse_ .nav > li.active,
+  .nav-collapse_ .nav > li.active {
+    background: none;
+  }
+  .nav-collapse_ .nav > li.sfHover > a,
+  .nav-collapse_ .nav > li.sfHover > a:hover,
+  .nav-collapse_ .nav > li > a:hover,
+  .nav-collapse_ .nav > li.active > a,
+  .nav-collapse_ .nav > li.active > a:hover {
+    background: none;
+    color: #8c8c8c;
+  }
+  .sub-menu > a {
+    position: relative;
+    display: block;
+  }
+  .nav-collapse_ .nav > li.sub-menu > a:before,
+  .nav-collapse_ .nav > li li.sub-menu > a:before {
+    content: "";
+    position: absolute;
+    background: url(/web/20170628120426im_/http://liquidinjection.net/img/li-marker.png) left top no-repeat;
+    width: 7px;
+    height: 5px;
+    right: 20px;
+    top: 50%;
+    margin-top: -3px;
+  }
+  .sf-sub-indicator {
+    background: url(/web/20170628120426im_/http://liquidinjection.net/img/marker.png) no-repeat scroll 0 0;
+    height: 4px;
+    width: 7px;
+    position: relative;
+    display: inline-block !important;
+    left: 0;
+    top: -3px;
+    margin: 0px 0 0 7px;
+    bottom: auto;
+  }
+  .nav-collapse_ .nav ul,
+  .nav-collapse_ .nav ul ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    list-style: none;
+    zoom: 1;
+    z-index: 9;
+    padding: 0 0 0 12px;
+    margin: 0;
+    background: transparent;
+  }
+  .nav-collapse_ .nav ul li a {
+    color: #ffffff;
+  }
+  .nav-collapse_ .nav ul li li a {
+    color: #ffffff;
+  }
+  .nav-collapse_ .nav ul li li a:hover {
+    color: #8c8c8c !important;
+  }
+  .nav-collapse_ .nav ul {
+    padding-top: 5px;
+  }
+  .nav-collapse_ .nav ul li {
+    padding: 6px 0 6px 0;
+  }
+  .nav-collapse_ .nav ul ul {
+    padding-top: 8px;
+  }
+  .nav-collapse_ .nav ul li a {
+    display: block;
+    font-size: 12px;
+    padding-left: 0;
+  }
+  .nav-collapse_ .nav ul ul li a {
+    padding-left: 0;
+  }
+  .img-indent1 img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .list-quote dd {
+    margin-left: 0;
+  }
+  .portfolio li {
+    margin-left: 20px;
+  }
+  .portfolio li img {
+    width: 351px;
+  }
+  .img-indent {
+    float: none;
+    margin: 0 0 18px 0;
+  }
+  .img-indent img {
+    width: 100%;
+  }
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+  }
+  #form-search input {
+    width: 74%;
+  }
+  .address-1 span {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+  .row {
+    padding: 0 20px;
+  }
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .portfolio li img {
+    width: 95%;
+  }
+  .bg-glow {
+    background: none;
+  }
+  .thumbnail-1 > img {
+    width: 100%;
+  }
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+  }
+  #form-search input {
+    width: 93%;
+  }
+  .portfolio li {
+    float: none;
+    margin: 0 0 20px 0;
+  }
+  .list-quote dt,
+  .list-blog dt {
+    float: left;
+  }
+  .block-list {
+    overflow: hidden;
+  }
+  .block-list .span2 {
+    float: left;
+    width: 220px;
+  }
+  .list-client {
+    overflow: hidden;
+  }
+  .list-client .span3 {
+    float: left;
+    width: 280px;
+    margin-right: 20px;
+  }
+  .list-client .span3 img {
+    width: 100%;
+  }
+  #search input {
+    width: 66%;
+  }
+  .thumbnails-1 .thumbnail-1 img {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .list-social {
+    float: none !important;
+  }
+  .privacy {
+    float: none !important;
+  }
+  .img-indent {
+    float: none;
+    margin: 0 0 18px 0;
+  }
+  .img-indent img {
+    width: 100%;
+  }
+  .portfolio li img {
+    width: 100%;
+  }
+  .portfolio li {
+    float: none;
+    margin: 0 0 20px 0;
+  }
+  #form-search input {
+    width: 100%;
+  }
+  .list-client .span3 {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+  #search input {
+    width: 66%;
+  }
+  #form-search input {
+    width: 84%;
+  }
+}
+@media (max-width: 320px) {
+  .navbar_ .brand {
+    font-size: 96px;
+    width: 182px;
+  }
+  #search input {
+    width: 61%;
+  }
+  .navbar_ .brand a {
+    padding: 10px 0 5px 15px;
+  }
+  .img-indent1 {
+    float: none;
+    margin: 1px 0 16px;
+  }
+  .overflow.extra {
+    overflow: visible;
+  }
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+     FILE ARCHIVED ON 12:04:26 Jun 28, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:28:03 Jun 08, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.613
+  exclusion.robots: 0.049
+  exclusion.robots.policy: 0.036
+  esindex: 0.011
+  cdx.remote: 7.589
+  LoadShardBlock: 47.033 (3)
+  PetaboxLoader3.datanode: 45.743 (4)
+  PetaboxLoader3.resolve: 82.096 (2)
+  load_resource: 84.987
+*/
