@@ -95,23 +95,13 @@ p:last-child {
 	padding: 0 1.5rem;
 }
 .section {
-	padding: 7rem 0;
+	padding: 6rem 0;
 }
 .section-lg {
-	padding: 7rem 0;
+	padding: 6rem 0;
 }
 .page-content {
 	display: block;
-}
-.page-hero ~ .section,
-.page-hero ~ .section-lg {
-	padding: 4.5rem 0;
-}
-.section.section-sm {
-	padding: 0.75rem 0;
-}
-.page-hero ~ .container .series-block {
-	padding: 4.5rem 0;
 }
 .bg-light {
 	background: var(--light);
@@ -540,12 +530,11 @@ p:last-child {
 	min-height: 300px;
 }
 
-/* ── Series sections (pumps page) ──────────────────────────────────────────── */
-.series-block {
-	padding: 7rem 0;
+/* ── Pumps catalog sections ─────────────────────────────────────────────────── */
+.pumps-series {
 	border-bottom: 1px solid var(--border);
 }
-.series-block:last-of-type {
+.pumps-series:last-of-type {
 	border-bottom: none;
 }
 .series-layout {
@@ -641,9 +630,9 @@ tbody tr:last-child td {
 /* ── Spec box ───────────────────────────────────────────────────────────────── */
 .spec-box {
 	border-left: 3px solid var(--blue);
-	padding: 1.25rem 1.5rem;
+	padding: 1.25rem 1.5rem 0;
 	background: var(--light);
-	margin: 1.5rem 0;
+	margin: 1.5rem 0 0;
 	border-radius: 0 var(--radius) var(--radius) 0;
 }
 .spec-box h4 {
@@ -656,7 +645,7 @@ tbody tr:last-child td {
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1rem;
 	border: none;
-	margin: 2rem 0;
+	margin: 0 0 2rem;
 }
 .app-item {
 	padding: 1.75rem;
@@ -1059,16 +1048,33 @@ button:disabled {
 }
 
 @media (max-width: 768px) {
-	.page-content {
-		padding-top: var(--mobile-page-edge-space, 2rem);
-		padding-bottom: var(--mobile-page-edge-space, 2rem);
-	}
-	.series-block,
-	.page-hero ~ .container .series-block {
+	.section,
+	.section-lg {
 		padding: 3rem 0;
 	}
+	.page-content {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+	.home-page .page-content {
+		padding-top: 4rem;
+	}
+	body:not(.home-page) .page-content > .section:first-child,
+	body:not(.home-page) .page-content > .section-lg:first-child {
+		padding-top: 0;
+	}
+	body:not(.home-page) .page-content > .container:first-child > .section:first-child {
+		padding-top: 0;
+	}
+	.page-content > .section:last-of-type,
+	.page-content > .section-lg:last-of-type {
+		padding-bottom: 0;
+	}
+	.page-content > .container:last-child > .section:last-of-type {
+		padding-bottom: 0;
+	}
 	.spec-box {
-		padding: 0.9rem 1rem;
+		padding: 0.9rem 1rem 0;
 		margin: 0;
 	}
 
@@ -1171,7 +1177,7 @@ button:disabled {
 		height: 320px;
 	}
 	.home-page {
-		--mobile-section-padding: 2rem;
+		--mobile-section-padding: 3rem;
 	}
 	.home-page .section,
 	.home-page .section-lg {
@@ -1180,8 +1186,7 @@ button:disabled {
 	.applications-page,
 	.why-ozawa-page {
 		--mobile-page-hero-padding: 5rem;
-		--mobile-first-content-gap: 5rem;
-		--mobile-section-padding: 2rem;
+		--mobile-section-padding: 3rem;
 	}
 	.applications-page .section {
 		padding: var(--mobile-section-padding) 0;
@@ -1190,16 +1195,9 @@ button:disabled {
 	.why-ozawa-page .page-hero {
 		padding: var(--mobile-page-hero-padding) 0;
 	}
-	.applications-page .page-hero + .section,
-	.why-ozawa-page .page-hero + .section {
-		padding-top: var(--mobile-first-content-gap);
-	}
-	.applications-page .section.section-sm {
-		padding: 0.5rem 0;
-	}
 	.applications-page .app-grid {
 		gap: 0.75rem;
-		margin: 1.25rem 0;
+		margin: 0;
 	}
 	.applications-page .app-item {
 		padding: 1.25rem;
@@ -1215,6 +1213,9 @@ button:disabled {
 	}
 	.why-ozawa-page .cta-row {
 		margin-top: 1.25rem;
+	}
+	.contact-page .page-hero {
+		padding: 3rem 0;
 	}
 
 	.trust-bar-inner {
@@ -1248,6 +1249,31 @@ button:disabled {
 }
 
 @media (min-width: 769px) {
+	.section,
+	.section-lg {
+		padding: 3rem 0;
+	}
+	.page-content {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+	.home-page .page-content {
+		padding-top: 4rem;
+	}
+	.page-content > .section:first-child,
+	.page-content > .section-lg:first-child {
+		padding-top: 0;
+	}
+	.page-content > .container:first-child > .section:first-child {
+		padding-top: 0;
+	}
+	.page-content > .section:last-of-type,
+	.page-content > .section-lg:last-of-type {
+		padding-bottom: 0;
+	}
+	.page-content > .container:last-child > .section:last-of-type {
+		padding-bottom: 0;
+	}
 	.home-page .hero {
 		align-items: center;
 		padding-top: 0;
