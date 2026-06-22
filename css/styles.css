@@ -1227,3 +1227,10 @@ button:disabled {
 		height: 200px;
 	}
 }
+
+@media (min-width: 769px) {
+	.home-page .hero {
+		align-items: center;
+		padding-top: 0;
+	}
+}
