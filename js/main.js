@@ -1,3 +1,11 @@
+/* Scroll-aware header */
+const header = document.querySelector('.site-header');
+function onScroll() {
+  header.classList.toggle('scrolled', window.scrollY > 10);
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
 /* Mobile nav toggle */
 const toggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
