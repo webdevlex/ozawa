@@ -213,6 +213,10 @@ p:last-child {
 .site-header.scrolled .nav-toggle span {
 	background: var(--black);
 }
+.site-header.scrolled .nav-links.open {
+	background: var(--white);
+	border-bottom: 1px solid var(--border);
+}
 .site-header.scrolled .nav-cta {
 	background: var(--black);
 	color: var(--white);
@@ -224,7 +228,7 @@ p:last-child {
 }
 .site-header .container {
 	max-width: none;
-	padding: 0 2.5rem;
+	padding: 0 1.5rem;
 }
 .nav-inner {
 	display: grid;
@@ -326,7 +330,8 @@ p:last-child {
 	aspect-ratio: 21 / 9;
 	background: url("../images/hero_wide.png") center / cover no-repeat;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
+	padding-top: 5rem;
 	overflow: hidden;
 }
 .hero::before {
@@ -720,6 +725,32 @@ tbody tr:last-child td {
 	color: var(--dark);
 }
 
+.multi-chem-callout-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	align-items: center;
+}
+.multi-chem-caption {
+	font-size: 0.8rem;
+	color: var(--mid);
+	margin-top: 0.75rem;
+	text-align: center;
+}
+
+.why-ozawa-feature-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	align-items: center;
+}
+.why-ozawa-feature-image {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	border-radius: var(--radius);
+}
+
 /* ── Why Ozawa benefit rows ─────────────────────────────────────────────────── */
 .benefit-row {
 	display: grid;
@@ -845,6 +876,24 @@ tbody tr:last-child td {
 	color: var(--mid);
 	margin-top: 0.25rem;
 }
+.form-success {
+	padding: 2rem;
+	background: var(--light);
+	border-radius: var(--radius);
+	border-left: 4px solid var(--blue);
+}
+.form-success h3 {
+	margin-bottom: 0.5rem;
+}
+.form-error {
+	color: #c0392b;
+	font-size: 0.9rem;
+	margin-top: 0.5rem;
+}
+button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
 
 /* ── Page hero (inner pages) ────────────────────────────────────────────────── */
 .page-hero {
@@ -870,6 +919,25 @@ tbody tr:last-child td {
 	margin-top: 2rem;
 }
 
+/* shared application CTA */
+.app-cta-section {
+	border-top: 1px solid var(--border);
+}
+.app-cta-inner {
+	text-align: center;
+	max-width: 600px;
+}
+.app-cta-inner p {
+	color: var(--mid);
+	margin-bottom: 1.75rem;
+}
+.app-cta-actions {
+	display: flex;
+	gap: 0.75rem;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
 /* ── Section label ──────────────────────────────────────────────────────────── */
 .section-label {
 	font-size: 0.8rem;
@@ -878,6 +946,19 @@ tbody tr:last-child td {
 	text-transform: uppercase;
 	color: var(--blue);
 	margin-bottom: 0.6rem;
+}
+
+/* applications intro (home page) */
+.applications-intro-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+	align-items: center;
+}
+.applications-intro-image {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
 }
 
 /* ── Footer ─────────────────────────────────────────────────────────────────── */
@@ -964,6 +1045,15 @@ tbody tr:last-child td {
 }
 
 @media (max-width: 768px) {
+	.series-block,
+	.page-hero ~ .container .series-block {
+		padding: 3rem 0;
+	}
+	.spec-box {
+		padding: 0.9rem 1rem;
+		margin: 0;
+	}
+
 	.nav-links,
 	.nav-cta {
 		display: none;
@@ -971,6 +1061,7 @@ tbody tr:last-child td {
 	.nav-links.open {
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 		position: absolute;
 		top: 64px;
 		left: 0;
@@ -994,7 +1085,13 @@ tbody tr:last-child td {
 		padding-top: 5rem;
 	}
 	.hero::before {
-		display: none;
+		display: block;
+		background: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.78) 0%,
+			rgba(255, 255, 255, 0.48) 38%,
+			transparent 72%
+		);
 	}
 	.hero .container {
 		grid-template-columns: 1fr;
@@ -1027,11 +1124,78 @@ tbody tr:last-child td {
 	.chem-diagram {
 		grid-template-columns: repeat(2, 1fr);
 	}
+	.multi-chem-callout-grid {
+		grid-template-columns: 1fr;
+		gap: 4rem;
+	}
+	.why-ozawa-feature-grid {
+		grid-template-columns: 1fr;
+		gap: 4rem;
+	}
+	.why-ozawa-feature-text {
+		order: 1;
+	}
+	.why-ozawa-feature-media {
+		order: 2;
+	}
 	.app-grid {
 		grid-template-columns: 1fr;
 	}
 	.slide-grid {
 		grid-template-columns: repeat(2, 1fr);
+	}
+	.applications-intro-grid {
+		grid-template-columns: 1fr;
+		gap: 4rem;
+	}
+	.applications-intro-image {
+		height: 320px;
+	}
+	.home-page {
+		--mobile-section-padding: 2rem;
+	}
+	.home-page .section,
+	.home-page .section-lg {
+		padding: var(--mobile-section-padding) 0;
+	}
+	.applications-page,
+	.why-ozawa-page {
+		--mobile-page-hero-padding: 5rem;
+		--mobile-first-content-gap: 5rem;
+		--mobile-section-padding: 2rem;
+	}
+	.applications-page .section {
+		padding: var(--mobile-section-padding) 0;
+	}
+	.applications-page .page-hero,
+	.why-ozawa-page .page-hero {
+		padding: var(--mobile-page-hero-padding) 0;
+	}
+	.applications-page .page-hero + .section,
+	.why-ozawa-page .page-hero + .section {
+		padding-top: var(--mobile-first-content-gap);
+	}
+	.applications-page .section.section-sm {
+		padding: 0.5rem 0;
+	}
+	.applications-page .app-grid {
+		gap: 0.75rem;
+		margin: 1.25rem 0;
+	}
+	.applications-page .app-item {
+		padding: 1.25rem;
+	}
+	.applications-page .multi-chem-callout-grid {
+		gap: 2.5rem;
+	}
+	.why-ozawa-page .section {
+		padding: var(--mobile-section-padding) 0;
+	}
+	.why-ozawa-page .why-ozawa-feature-grid {
+		gap: 2rem;
+	}
+	.why-ozawa-page .cta-row {
+		margin-top: 1.25rem;
 	}
 
 	.trust-bar-inner {

@@ -163,10 +163,12 @@
 						</p>
 						<form
 							class="contact-form"
-							action="mailto:brannong@liquidinjection.net"
+							action="https://api.web3forms.com/submit"
 							method="POST"
-							enctype="text/plain"
 						>
+							<input type="hidden" name="access_key" value="37d73274-d6db-4d15-a4ab-7d9335ac9589">
+							<input type="hidden" name="subject" value="New Contact Form Submission — Liquid Injection">
+							<input type="checkbox" name="botcheck" style="display:none">
 							<div class="form-group">
 								<label for="name"
 									>Full Name <span aria-hidden="true">*</span></label
@@ -233,11 +235,17 @@
 								Send Message
 							</button>
 							<p class="form-note">
-								Your message will open in your default email client.
-								Alternatively, call us at
+								We'll get back to you as soon as possible. Alternatively, call us at
 								<a href="tel:+18006216365">1-800-621-6365</a>.
 							</p>
 						</form>
+						<div class="form-success" style="display:none">
+							<h3>Message Sent!</h3>
+							<p>Thanks for reaching out. We'll get back to you as soon as possible. Alternatively, call us at <a href="tel:+18006216365">1-800-621-6365</a>.</p>
+						</div>
+						<p class="form-error" style="display:none">
+							Something went wrong — please try again or call us at <a href="tel:+18006216365">1-800-621-6365</a>.
+						</p>
 					</div>
 				</div>
 			</div>
