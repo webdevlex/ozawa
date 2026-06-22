@@ -75,6 +75,19 @@ p:last-child {
 	margin-bottom: 0;
 }
 
+/* improve heading-to-subtext spacing across sections */
+.section h1 + p,
+.section h2 + p,
+.section h3 + p,
+.section-lg h1 + p,
+.section-lg h2 + p,
+.section-lg h3 + p,
+.page-hero h1 + p,
+.hero-text h1 + p,
+.app-cta-inner h2 + p {
+	margin-top: 0.85rem;
+}
+
 /* ── Layout helpers ─────────────────────────────────────────────────────────── */
 .container {
 	max-width: var(--max-w);
@@ -86,6 +99,9 @@ p:last-child {
 }
 .section-lg {
 	padding: 7rem 0;
+}
+.page-content {
+	display: block;
 }
 .page-hero ~ .section,
 .page-hero ~ .section-lg {
@@ -400,7 +416,6 @@ p:last-child {
 	width: 100%;
 	height: 220px;
 	object-fit: contain;
-	background: var(--light);
 	margin-bottom: 1.5rem;
 	border-radius: var(--radius);
 }
@@ -549,7 +564,6 @@ p:last-child {
 	width: 100%;
 	height: 200px;
 	object-fit: contain;
-	background: var(--light);
 	padding: 0.75rem;
 	border-radius: var(--radius);
 }
@@ -1045,6 +1059,10 @@ button:disabled {
 }
 
 @media (max-width: 768px) {
+	.page-content {
+		padding-top: var(--mobile-page-edge-space, 2rem);
+		padding-bottom: var(--mobile-page-edge-space, 2rem);
+	}
 	.series-block,
 	.page-hero ~ .container .series-block {
 		padding: 3rem 0;
@@ -1078,7 +1096,8 @@ button:disabled {
 
 	.hero {
 		aspect-ratio: unset;
-		min-height: 100vh;
+		height: 1000px;
+		min-height: 1000px;
 		background-position: center;
 		background-image: url("../images/mobile-hero.png");
 		align-items: flex-start;
