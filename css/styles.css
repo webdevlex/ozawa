@@ -665,6 +665,86 @@ tbody tr:last-child td {
 	object-fit: cover;
 	border-radius: var(--radius);
 }
+.slide-grid img.contain {
+	object-fit: contain;
+	background: var(--light);
+	padding: 0.75rem;
+}
+
+/* ── Gallery grid + lightbox ────────────────────────────────────────────────── */
+.gallery-item {
+	display: block;
+	width: 100%;
+	padding: 0;
+	border: 0;
+	background: none;
+	font: inherit;
+	cursor: zoom-in;
+	border-radius: var(--radius);
+	overflow: hidden;
+}
+.gallery-item img {
+	display: block;
+	transition: transform 0.2s;
+}
+.gallery-item:hover img {
+	transform: scale(1.03);
+}
+.gallery-item:focus-visible {
+	outline: 2px solid var(--blue);
+	outline-offset: 3px;
+}
+.lightbox {
+	position: fixed;
+	inset: 0;
+	z-index: 200;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	background: rgba(0, 0, 0, 0.9);
+}
+.lightbox.open {
+	display: flex;
+}
+.lightbox img {
+	max-width: 100%;
+	max-height: 90vh;
+	object-fit: contain;
+	border-radius: var(--radius);
+}
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+	position: absolute;
+	background: none;
+	border: 0;
+	color: var(--white);
+	font-size: 2.5rem;
+	line-height: 1;
+	padding: 1rem;
+	cursor: pointer;
+	opacity: 0.75;
+	transition: opacity 0.2s;
+}
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover {
+	opacity: 1;
+}
+.lightbox-close {
+	top: 0.5rem;
+	right: 1rem;
+}
+.lightbox-prev {
+	left: 0.5rem;
+}
+.lightbox-next {
+	right: 0.5rem;
+}
+body.lightbox-open {
+	overflow: hidden;
+}
 .app-item:hover {
 	transform: translateY(-2px);
 }
@@ -1187,16 +1267,28 @@ button:disabled {
 		padding: var(--mobile-section-padding) 0;
 	}
 	.applications-page,
-	.why-ozawa-page {
+	.why-ozawa-page,
+	.gallery-page {
 		--mobile-page-hero-padding: 5rem;
 		--mobile-section-padding: 3rem;
 	}
-	.applications-page .section {
+	.applications-page .section,
+	.gallery-page .section {
 		padding: var(--mobile-section-padding) 0;
 	}
 	.applications-page .page-hero,
-	.why-ozawa-page .page-hero {
+	.why-ozawa-page .page-hero,
+	.gallery-page .page-hero {
 		padding: var(--mobile-page-hero-padding) 0;
+	}
+	.lightbox {
+		padding: 1rem;
+	}
+	.lightbox-close,
+	.lightbox-prev,
+	.lightbox-next {
+		font-size: 1.75rem;
+		padding: 0.5rem;
 	}
 	.applications-page .app-grid {
 		gap: 0.75rem;

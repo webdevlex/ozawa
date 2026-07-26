@@ -25,6 +25,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.liquidinjection.net/gallery.html</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.liquidinjection.net/contact.html</loc>
     <lastmod>2024-01-01</lastmod>
     <changefreq>yearly</changefreq>
