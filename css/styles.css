@@ -418,7 +418,7 @@ p:last-child {
 }
 .product-card img {
 	width: 100%;
-	height: 220px;
+	height: 340px;
 	object-fit: contain;
 	margin-bottom: 1.5rem;
 	border-radius: var(--radius);
@@ -565,14 +565,14 @@ p:last-child {
 }
 .series-photos img {
 	width: 100%;
-	height: 200px;
+	height: 300px;
 	object-fit: contain;
 	padding: 0.75rem;
 	border-radius: var(--radius);
 }
 .series-photos img:only-child {
 	grid-column: 1 / -1;
-	height: 260px;
+	height: 400px;
 }
 .series-badge {
 	display: inline-block;
@@ -685,6 +685,14 @@ tbody tr:last-child td {
 }
 
 /* ── Gallery grid + lightbox ────────────────────────────────────────────────── */
+/* Gallery thumbnails always fill the square, cropping as needed — including the
+   ones tagged .contain. The full image still shows uncropped in the lightbox. */
+.gallery-grid img,
+.gallery-grid img.contain {
+	object-fit: cover;
+	background: none;
+	padding: 0;
+}
 .gallery-item {
 	display: block;
 	width: 100%;
@@ -721,9 +729,14 @@ tbody tr:last-child td {
 	display: flex;
 }
 .lightbox img {
+	width: auto;
+	height: auto;
 	max-width: 100%;
 	max-height: 90vh;
+	aspect-ratio: auto;
 	object-fit: contain;
+	padding: 0;
+	background: none;
 	border-radius: var(--radius);
 }
 .lightbox-close,
@@ -1349,7 +1362,7 @@ button:disabled {
 		grid-template-columns: 1fr;
 	}
 	.series-photos img {
-		height: 200px;
+		height: 300px;
 	}
 }
 
